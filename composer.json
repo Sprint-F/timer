@@ -1,0 +1,23 @@
+{
+  "name": "sprint-f/timer",
+  "type": "library",
+  "description": "PHP Async Timer",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Albert Stepantsev",
+      "email": "albert.stepantsev@sprintf.ru"
+    }
+  ],
+  "homepage": "https://sprintf.ru",
+  "require": {
+    "php": "^8.2",
+    "ext-pcntl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "SprintF\\Timer\\": "src/"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+
+  php:
+    build:
+      context: ./
+      dockerfile: .build/php/Dockerfile
+    volumes:
+      - ./:/app
+    command:
+      - /bin/bash
+      - -c
+      - |
+        php -S 0.0.0.0:80 -t /app
